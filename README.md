@@ -8,14 +8,16 @@
 
 ### Preview
 
-- ```git clone git@github.com:iPriceGroup/find-invite.git find-invite```
+- ```git clone https://github.com/ShadOoW/find-invite.git```
 - ```cd find-invite```
 - ```cp .env.example .env```
 - ```npm start```
 
+
 ### Tasks
 
 - ```npm run lint``` - lint ts.
+- ```npm run document``` generate html document from JSDoc annotations
 - ```npm test``` - run tests.
 - ```npm start``` - execute the script.
 
@@ -23,5 +25,5 @@
 
 - ```src/``` source code (.ts) and tests (.spec.ts)
 - ```build/ and test/``` auto generated js files
-- ```docs``` HTML version if your JSDoc annotations from the code
-- 
+- ```docs/``` HTML version of JSDoc annotations from the code
+- ```tsconfig/``` typescript linter and compiler configurations
