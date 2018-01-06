@@ -29,9 +29,9 @@ async function execute (): Promise<{ invitedUsers: Array<any>, errors: Array<str
                 );
 
                 let targetErrors: Array<string> = [];
-                targetErrors.concat(Domain.NumberValidator(target.latitude, 'latitude'));
-                targetErrors.concat(Domain.NumberValidator(target.longitude, 'longitude'));
-                targetErrors.concat(Domain.GeoCoordinateValidator(target));
+                targetErrors = targetErrors.concat(Domain.NumberValidator(target.latitude, 'latitude'));
+                targetErrors = targetErrors.concat(Domain.NumberValidator(target.longitude, 'longitude'));
+                targetErrors = targetErrors.concat(Domain.GeoCoordinateValidator(target));
 
                 if (targetErrors.length > 0) {
                     data.errors.push(
