@@ -1,0 +1,18 @@
+{
+    "extends": "./tsconfig-base",
+    "compilerOptions": {
+        "outDir": "./../build",
+        "types": [
+            "node"
+        ],
+        "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "./../src/**/*.ts"
+    ],
+    "exclude": [
+        "./../src/*.spec.ts",
+        "./../src/*.test.ts",
+        "./../node_modules/**/*"
+    ]
+}
