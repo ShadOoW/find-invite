@@ -1,6 +1,6 @@
 export namespace Domain {
     /**
-     * Represent GeoCoordinate's
+     * Represent GeoCoordinate's latitude and longitude
      */
     export class GeoCoordinate {
         public latitude: number;

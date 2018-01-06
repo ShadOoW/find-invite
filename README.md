@@ -11,6 +11,7 @@
 - ```git clone https://github.com/ShadOoW/find-invite.git```
 - ```cd find-invite```
 - ```cp .env.example .env```
+- ```yarn``` or ```npm i```
 - ```npm start```
 
 
